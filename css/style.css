@@ -1,0 +1,692 @@
+/* FREE PSD CODED AND SHORTENED/MODIFIED BY ME */
+
+/* ## GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+/* ## HEADER */
+#main-header {
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(142, 199, 245, 0.7), rgba(71, 179, 49, 0.1)), url(../images/header.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    min-height: 100vh;
+}
+
+#main-header>* {
+    position: absolute;
+}
+
+#main-header .logo {
+    display: flex;
+    top: 2%;
+    left: 3%;
+}
+
+#main-header .logo .whole {
+    height: 18px;
+    width: 18px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+#main-header .logo h3 {
+    margin-left: 5px;
+    color: #fff;
+    font-style: italic;
+    font-weight: 100;
+    line-height: 100%;
+}
+
+/* ## SECOND HALF HEDAER */
+#main-header .header-section {
+    width: 70%;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+#main-header .header-section h1 {
+    font-weight: 300;
+    margin-bottom: 35px;
+}
+
+#main-header .header-section h3 {
+    font-weight: 100;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* ## MEDIA - RWD */
+@media (min-width: 476px) {
+    #main-header .logo {
+        top: 3%;
+        left: 5%;
+    }
+
+    #main-header .header-section h1 {
+        font-size: 2.6rem;
+    }
+
+    #main-header .header-section h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 576px) {
+    #main-header .logo h3 {
+        font-size: 1.7rem;
+    }
+
+    #main-header .logo .whole {
+        height: 25px;
+        width: 25px;
+    }
+
+    #main-header .header-section {
+        width: 70%;
+    }
+
+    #main-header .header-section h1 {
+        font-size: 2.7rem;
+    }
+
+    #main-header .header-section h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #main-header .logo h3 {
+        font-size: 2.2rem;
+    }
+
+    #main-header .logo .whole {
+        height: 35px;
+        width: 35px;
+    }
+
+    #main-header .header-section {
+        width: 70%;
+    }
+
+    #main-header .header-section h1 {
+        font-size: 3.2rem;
+    }
+
+    #main-header .header-section h3 {
+        font-size: 1.9rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #main-header .header-section {
+        width: 55%;
+    }
+
+    #main-header .header-section h1 {
+        font-size: 3rem;
+    }
+
+    #main-header .header-section h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    #main-header .logo h3 {
+        font-size: 2.7rem;
+    }
+
+    #main-header .logo .whole {
+        height: 45px;
+        width: 45px;
+    }
+
+    #main-header .header-section {
+        width: 45%;
+    }
+
+    #main-header .header-section h1 {
+        font-size: 4.3rem;
+    }
+
+    #main-header .header-section h3 {
+        font-size: 2rem;
+    }
+}
+
+/* ## SECTION ABOUT */
+#about {
+    width: 80%;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+#about .header-section {
+    font-size: 1.7rem;
+}
+
+#about .about-content p {
+    margin: 15px 0;
+    text-align: left;
+}
+
+/* ## MEDIA - RWD */
+@media (min-width: 576px) {
+    #about .header-section {
+        font-size: 2.2rem;
+    }
+
+    #about .about-content p {
+        margin: 25px 0;
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 767px) {
+    #about .header-section {
+        font-size: 2.5rem;
+    }
+
+    #about .about-content p {
+        margin: 45px 0;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #about .about-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #about .about-content h2 {
+        flex-basis: 100%;
+    }
+
+    #about .about-content p {
+        flex-basis: 45%;
+        margin: 30px 0;
+    }
+}
+
+/* ## Position offers elements */
+#about .offers {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    color: #fff;
+}
+
+#about .offers .offer {
+    position: relative;
+    padding: 20px 15px;
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+}
+
+#about .offers .offer h5 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+#about .offers .offer p {
+    margin-top: 15px;
+    width: 90%;
+    font-size: 0.8rem;
+}
+
+#about .offers .offer:nth-child(1) {
+    background-color: #ee96a5;
+}
+
+#about .offers .offer:nth-child(2) {
+    background-color: #4a3d5a;
+}
+
+#about .offers .offer:nth-child(3) {
+    background-image: url(../images/picture_1.png);
+}
+
+#about .offers .offer:nth-child(4) {
+    background-image: url(../images/picture_2.png);
+}
+
+#about .offers .offer:nth-child(5) {
+    background-color: #82ca9c;
+}
+
+#about .offers .offer:hover {
+    cursor: pointer;
+    background-color: #0000ff59;
+}
+
+/* ## MEDIA - RWD */
+@media (min-width: 576px) {
+    #about .offers .offer {
+        padding: 40px 35px;
+    }
+
+    #about .offers .offer h5 {
+        font-size: 1.7rem;
+    }
+
+    #about .offers .offer p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 767px) {
+    #about .offers {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #about .offers .offer {
+        flex-basis: 50%;
+        padding-top: 60px;
+    }
+
+    #about .offers .offer:nth-child(3) {
+        flex-basis: 100%;
+    }
+
+    #about .offers .offer h5 {
+        font-size: 1.7rem;
+    }
+
+    #about .offers .offer p {
+        margin-top: 45px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    #about .offers .offer {
+        flex-basis: 33%;
+    }
+
+    #about .offers .offer:nth-child(3) {
+        flex-basis: 33%;
+    }
+
+    #about .offers .offer:nth-child(4) {
+        flex-basis: 66%;
+    }
+}
+
+#about .second-content {
+    margin-top: 50px;
+}
+
+#about .second-content .detail {
+    margin-top: 25px;
+}
+
+#about .second-content .detail h6 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+/* ## MEDIA - RWD */
+@media (min-width: 576px) {
+    #about .second-content .detail h6 {
+        font-size: 1.6rem;
+    }
+
+    #about .second-content .detail p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 767px) {
+    #about .second-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #about .second-content .detail {
+        flex-basis: 45%;
+    }
+
+    #about .second-content .detail h6 {
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+
+    #about .second-content .detail p {
+        font-size: 1.3rem;
+        text-align: justify;
+    }
+
+    #about .second-content h2 {
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #about .second-content .detail {
+        flex-basis: 20%;
+    }
+
+    #about .second-content .detail h6 {
+        font-size: 1.5rem;
+    }
+
+    #about .second-content .detail p {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+}
+
+/* ## SERVICES STYLES */
+#services {
+    color: #eeeeee;
+}
+
+#services .bgc-service {
+    position: relative;
+    background-image: url(../images/section_picture_1.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#services .bgc-service .curtain {
+    height: 100%;
+    width: 100%;
+    background-color: #00000070;
+    z-index: 2;
+}
+
+#services .bgc-service .services-content {
+    position: absolute;
+    width: 80%;
+    margin: 0 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#services .bgc-service .services-content h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 8%;
+}
+
+@media (min-width: 576px) {
+    #services .bgc-service .services-content {
+        width: 70%;
+    }
+
+    #services .bgc-service .services-content h2 {
+        font-size: 2.3rem;
+    }
+
+    #services .bgc-service .services-content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    #services .bgc-service .services-content {
+        width: 40%;
+    }
+
+    #services .bgc-service .services-content h2 {
+        font-size: 2.7rem;
+    }
+
+    #services .bgc-service .services-content p {
+        font-size: 1.4rem;
+    }
+}
+
+/* ## REASONS PART */
+#services .reasons-part {
+    background-color: #82ca9c;
+}
+
+#services .reasons-part .contain-reasons {
+    max-width: 1200px;
+    padding: 8% 0;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#services .reasons-part h3 {
+    font-size: 1.5rem;
+    margin-bottom: 6%;
+}
+
+#services .reasons-part .service h5 {
+    padding: 2% 0;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+#services .reasons-part .service p {
+    padding: 5% 0;
+}
+
+@media (min-width: 576px) {
+    #services .reasons-part h3 {
+        font-size: 2rem;
+    }
+
+    #services .reasons-part .service h5 {
+        font-size: 1.5rem;
+    }
+
+    #services .reasons-part .service p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #services .reasons-part h3 {
+        font-size: 2.4rem;
+    }
+
+    #services .reasons-part .service h5 {
+        font-size: 1.7rem;
+    }
+
+    #services .reasons-part .contain-reasons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #services .reasons-part .contain-reasons h3 {
+        flex-basis: 100%;
+    }
+
+    #services .reasons-part .contain-reasons .service {
+        flex-basis: 30%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #services .reasons-part h3 {
+        font-size: 2.7rem;
+    }
+
+    #services .reasons-part .service h5 {
+        font-size: 2rem;
+    }
+
+    #services .reasons-part .service p {
+        font-size: 1.3rem;
+    }
+}
+
+/* ## SECTION CONTACT & FOOTER */
+#contact {
+    background-color: #192431;
+}
+
+#contact .contact-content {
+    padding: 7% 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 80%;
+    color: #ddd;
+}
+
+#contact .contact-content .first-part h5 {
+    margin-bottom: 5%;
+    font-size: 1.5rem;
+}
+
+#contact .contact-content .first-part p {
+    margin-bottom: 5%;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 576px) {
+    #contact .contact-content {
+        padding: 10% 0;
+    }
+
+    #contact .contact-content .first-part h5 {
+        font-size: 1.9rem;
+    }
+
+    #contact .contact-content .first-part p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #contact .contact-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #contact .contact-content .first-part {
+        flex-basis: 45%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #contact .contact-content {
+        padding: 3% 0;
+    }
+
+    #contact .contact-content .first-part {
+        margin-top: 15%;
+    }
+}
+
+/* ## SECOND PART */
+#contact .contact-content .second-part {
+    margin-top: 15%;
+}
+
+#contact .contact-content .second-part h5 {
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+}
+
+#contact .contact-content .second-part form {
+    font-size: 0;
+}
+
+#contact .contact-content .second-part form input {
+    width: 50%;
+    height: 25px;
+}
+
+#contact .contact-content .second-part form button {
+    width: 15%;
+    height: 25px;
+    background-color: #82ca9c;
+}
+
+#contact .contact-content .second-part form button:hover {
+    background-color: #71ba8b;
+    cursor: pointer;
+}
+
+#contact .contact-content .second-part form button i {
+    color: #fff;
+}
+
+@media (min-width: 576px) {
+    #contact .contact-content .second-part form input {
+        width: 45%;
+        height: 35px;
+    }
+
+    #contact .contact-content .second-part form button {
+        height: 35px;
+    }
+}
+
+@media (min-width: 768px) {
+    #contact .contact-content .second-part {
+        flex-basis: 45%;
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #contact .contact-content .second-part h5 {
+        margin-bottom: 5%;
+        font-size: 1.9rem;
+    }
+
+    #contact .contact-content .second-part form input {
+        width: 70%;
+        height: 40px;
+    }
+
+    #contact .contact-content .second-part form button {
+        height: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #contact .contact-content .second-part {
+        margin-top: 15%;
+    }
+}
+
+/* ## FOOTER */
+#main-footer {
+    margin-top: 10%;
+    padding-bottom: 3%;
+    color: #ddd;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    #main-footer {
+        font-size: 1.2rem;
+    }
+}
